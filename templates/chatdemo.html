@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../chatdemo.css"> <!--linking css doc-->
+    <title>Chatbot Demo</title>
+</head>
+<body>
+    <section class="header">
+        <nav> <!--navigation panel at the top-->
+          <a href="index.html"><img src="../images/logo_no_text.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-x" onclick="hideMenu()"></i> <!-- closes menu -->
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../about.html">ABOUT</a></li>
+              <li><a href="">FEATURES</a></li>
+              <li><a href="../pricing.html">PRICING</a></li>
+              <li><a href="">REMINDER DEMO</a></li>
+              <li><a href="chatdemo.html">CHAT DEMO</a></li>
+              <li><a href="../contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- shows menu on click -->
+        </nav>
+
+  <!-- chatbot implementation  -->
+  <main>
+    <section class="chat-container">
+        <h1>Chat</h1> 
+        <div id="conversation"> <!-- user message and ai response are displayed -->
+            {% for entry in conversation_history %}
+                {% if entry[0] == 'user' %}
+                    <p>You: {{ entry[1] }}</p>
+                {% else %}
+                    <p>AI: {{ entry[1] }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <form method="POST">
+            <input type="text" name="user_message" placeholder="Enter your message">
+            <button type="submit">Send</button>
+        </form>
+  </main>
+
+</body>
+</html>

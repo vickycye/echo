@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> <!--making the website responsive-->
+      <title>echo.ai</title>
+      <link rel="stylesheet" href="style.css"> <!--linking css doc-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google montserrat font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e170d92eca.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <section class="header">
+      <!-- navigation panel at the top -->
+      <nav>
+        <a href="index.html"><img src="images/logo_no_text.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i> <!-- closes menu -->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="">REMINDER DEMO</a></li>
+            <li><a href="templates/chatdemo.html">CHAT DEMO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- shows menu on click -->
+      </nav>
+
+  <!-- title page text -->
+  <div class="text-box">
+    <h1>27% of adults aged 60+ live alone...</h1>
+    <p>so we designed a voice-activated companion that encourages socialization among the elderly</p> <!-- fix line break when changing text -->
+    <a href="" class="hero-btn">Explore the Echopod</a>
+
+  </div>
+    
+
+    </section>
+
+    <!--------------- features test ---------------------->
+    <section class="features">
+      <h1>Our Product's Features</h1>
+      <p>Through years of research and development, we have finally landed on a solution that caters to each individuals needs efficiently and effectively.
+      </p>
+      
+      <div class="row">
+        <div class="features-col">
+          <h3>Voice-Activated Calling</h3>
+          <p>Let's face it. Not everyone has access to a phone, which can be detrimental to the wellbeing of older individuals as they grow increasingly disconnected from our society. Our Voice-activated Calling technology enables the elderly to swiftly call any contact with minimal effort to seamlessly connect the older generation to modern technology.</p>
+        </div>
+        <div class="features-col">
+          <h3>Personalized Large-Language-Model</h3>
+          <p>Having a personalized Large-Language-Model (LLM) allows for creativity and establishing a chat companion that dynamically morphs to the user's needs and routine. Not only does a Large-Language-Model improve the quality of life while using Echopod, but its ability to recognize behavioral changes is crucial to maintaining the wellbeing of the elderly.</p>
+        </div>
+        <div class="features-col">
+          <h3>Reminders for Medication</h3>
+          <p>As people grow older, they tend to forget daily tasks and neglect their body, which is why we've developed Medication reminders to ensure that every user wakes up to a friendly nudge, which builds a strong habit over time. Even the most confusing medication schedules can be processed by connecting your Echopod account with your local pharmacy.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--------------- problems (move this before features) ---------------------->
+    <section class="problems">
+      <h1>Why Echopod?</h1>
+      <p>Echopod aims to address three situations you'd never want to be in.</p>
+      
+      <div class="row">
+        <div class="problems-col">
+          <img src="images/LONE.png">
+          <div class="layer">
+            <h3>Loneliness</h3>
+          </div>
+        </div>
+        <div class="problems-col">
+          <img src="images/MEDS.png">
+          <div class="layer">
+            <h3>Forgetting to take Medication</h3>
+          </div>
+        </div>
+        <div class="problems-col">
+          <img src="images/CONFUSION.png">
+          <div class="layer">
+            <h3>Confusion</h3>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- ------------ section 3 --------------- -->
+    <section class="benefits">
+      <h1>Benefits</h1>
+      <p>In today's world, choices can be overwhelming. So, we've compiled 3 reasons why Echopod stands out among the competition.</p>
+
+      <div class="row">
+        <div class="benefits-col">
+          <img src="images/library.png">
+          <h3>BENEFIT 1</h3>
+          <p>Stay in touch with loved ones with intuitive and unforgettable voice commands.</p>
+        </div>
+        <div class="benefits-col">
+          <img src="images/basketball.png">
+          <h3>BENEFIT 2</h3>
+          <p>Keep your brain stimulated with personalized assistance and entertainment.</p>
+        </div>
+        <div class="benefits-col">
+          <img src="images/cafeteria.png">
+          <h3>BENEFIT 3</h3>
+          <p>Never forget your medications again.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ------- reviews ------- -->
+    <section class="reviews">
+      <h1>What our beta testers say...</h1>
+      <p>Last year, we rolled out our beta program for the Echopod to a small community of 1,000 users. Thank you to our beta testers!</p>
+    
+      <div class="row">
+        <div class="reviews-col">
+          <img src="images/user1.jpg">
+          <div>
+            <p>Bought one for each of my grandparents, have to say it really helped me connect with them better. My dad used to always forget to take his meds but now he never forgets!
+            </p>
+            <h3>Amelia Fitzgerald</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="reviews-col">
+          <img src="images/user2.jpg">
+          <div>
+            <p>Quite honestly the best thing out there for old people. I haven't noticed any major bugs with it and really happy overall. Shipping only took a couple of days, which was great.
+            </p>
+            <h3>Bill Scott</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- ------- JavaScript for Toggle Menu --------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+    // fix the small screen transition
+    function showMenu() {
+      navLinks.classList.add("show");
+    }
+
+    function hideMenu() {
+      navLinks.classList.remove("show");
+    }
+
+  </script>
+
+  </body>
+</html>
